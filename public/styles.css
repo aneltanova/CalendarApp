@@ -1,0 +1,201 @@
+html{
+  width:100%;
+  height:100%;
+ }
+
+body{  
+  font-family: Consolas, Courier New, monospace;
+  width:100%;
+  height:100%;
+  background-color: #161e22;
+}
+
+.calendar{
+    color: #0b161b; 
+    width: 780px;
+    height: 700px;
+    position: relative;
+    float: left;
+    margin: 3% auto;
+    margin-top: 15px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: #0b161b;
+    overflow: hidden;
+    box-shadow: 5px 5px 7px 3px rgba(0,0,0,0.3);
+}
+
+#calendar{
+    padding: 7px 20px;
+}
+
+#calendar_header{
+    border-radius: 10px;
+    background: #161e22;
+    color: #fff;
+    height: 200px;
+    margin: 3px;
+}
+
+#date{
+	font-size: 60px;
+	line-height: 40px;
+	text-align: left;
+  text-transform: uppercase;
+  color: #ffffff; 
+  padding-top: 45px;
+  padding-left: 20px;
+}
+
+h1{
+	font-size: 60px;
+	line-height: 40px;
+  margin:  2px;
+  padding-top: 80px;
+  padding-left: 20px;
+	text-align: left;
+  text-transform: uppercase;
+  color: #161e22; 
+}
+
+p{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 23px;
+  color: rgba(44, 42, 70, 0.575);
+}
+
+hr{
+  width: 90%;
+  height: 2px;
+  background-color: rgba(44, 42, 70, 0.377);
+  border: none;
+}
+
+.taskscont{
+color: #0b161b; 
+width: 450px;
+height: 690px;
+position: relative;
+float: left;
+margin: 3% auto;
+margin-top: 15px;
+margin-left: 50px;
+border-radius: 10px;
+background-color: white;
+border-color: #0b161b;
+padding: 5px;
+overflow: hidden;
+box-shadow: 5px 5px 7px 3px rgba(0,0,0,0.3);
+}
+
+#tasks {
+  font-size: 20px;
+  background-color: white;
+  width: 90%;
+  height: 60%;
+  position: relative;
+  margin-top: 40x;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+  border: none;
+}
+
+button{
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  border: 2px solid rgba(44, 42, 70, 0.575);
+  box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  color: rgba(44, 42, 70, 0.575);
+ cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+#prev, #next{
+  opacity: 0.2;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  /* margin: 10px; */
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+#next{
+  float: right; 
+}
+
+#date {
+  color: white;
+  margin: 10px;
+}
+
+.day {
+  display: inline-block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px;
+  padding: 0 1px;
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day:hover {
+  color: #fff;
+  background:  #161e22 ;
+}
+
+.day.today {
+  color: #fff;
+  background-color: #616b72 ;
+}
+
+.day.today:hover {
+  color: #fff;
+  background:  #161e22 ;
+}
+
+.day.other {
+  visibility: hidden;
+}
+
+.weekday{
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 50px;
+  background-color: rgba(214, 207, 207, 0.603);
+  margin-bottom: 0px;
+  padding-left: 5px;
+}
+
+.weekday div {
+  display: inline-block;
+  line-height: 50px;
+  width: 80px;
+  margin-right: 5px;
+  margin-left: 8px;
+  /* padding-left: 8px; */
+  
+  text-align: center;
+}
+
+.day.hastask {
+  border-color: #aaa;
+}

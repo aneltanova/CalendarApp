@@ -1,0 +1,8 @@
+{
+    "title": "Clndr",
+    "name": "clndr",
+    "version": "5.0.9",
+    "scripts": {
+        "start": "nodemon index.js"
+    }
+}
